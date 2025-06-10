@@ -1,0 +1,38 @@
+#include <iostream>
+
+int addNumbers(int first_param, int second_param){
+	int result = first_param + second_param;
+	return result;
+}
+
+int multiplyNumbers(int first_param, int second_param){
+	int result = first_param * second_param;
+	return result;
+}
+
+int main(){
+	
+	int first_number {13};
+	int second_number {7};
+	
+	std::cout << "The first number is " << first_number << std::endl;
+	std::cout << "The second number is " << second_number << std::endl;
+	
+	int sum = first_number + second_number;
+	std::cout << "The sum is " << sum << std::endl;
+	
+	sum = addNumbers(25,7);
+	std::cout << "The sum of 25 and 7 is " << sum << std::endl;
+	
+	sum = addNumbers(30,54);
+	std::cout << "The sum of 30 and 54 is " << sum << std::endl;
+	
+	std::cout << "The sum of 3 and 42 is " << addNumbers(3,42) << std::endl;
+	
+	int product = first_number * second_number;
+	
+	product = multiplyNumbers(3,6);
+	std::cout << "The product of 3 and 6 is " << product << std::endl;
+	
+	return 0;
+}
